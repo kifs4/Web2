@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration - TimeTheWork</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div class="container flex-fill">
+        <header class="d-flex align-items-center justify-content-center my-4">
+            <h1>TimeTheWork</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Home</a>
+                <a class="nav-item nav-link active" href="registration.html">Sign Up<span class="sr-only">(current)</a>
+                <a class="nav-item nav-link" href="login.html">Sign In</a>
+                <a class="nav-item nav-link" href="profile.html">Your Profile</a>
+                <a class="nav-item nav-link" href="about.html">Learn More</span></a>
+                <a class="nav-item nav-link" href="work.html">Your Work</a>
+            </div>
+        </nav>
+        <main class="my-4">
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required aria-label="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required aria-label="Email">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" name="gender" aria-label="Gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" name="dob" required aria-label="Date of Birth">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required aria-label="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </main>
+    </div>
+    <footer class="text-center my-4">
+        <p>&copy; 2024 TimeTheWork. All rights reserved.</p>
+    </footer>
+    <script src="../js/registration.js"></script>
+</body>
+</html>

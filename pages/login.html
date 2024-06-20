@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TimeTheWork</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div class="container flex-fill">
+        <header class="d-flex align-items-center justify-content-center my-4">
+            <h1>TimeTheWork</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Home</a>
+                <a class="nav-item nav-link" href="registration.html">Sign Up</a>
+                <a class="nav-item nav-link active" href="login.html">Sign In<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="profile.html">Your Profile</a>
+                <a class="nav-item nav-link" href="about.html">Learn More</a>
+                <a class="nav-item nav-link" href="work.html">Your Work</a>
+            </div>
+        </nav>
+        <main class="my-4">
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p>Not registered? <a href="registration.html">Create an account</a>.</p>
+        </main>
+    </div>
+    <footer class="text-center my-4">
+        <p>&copy; 2024 TimeTheWork. All rights reserved.</p>
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html>
